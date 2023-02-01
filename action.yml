@@ -1,9 +1,9 @@
 # action.yml
-name: "Setup Ossutil"
+name: "Setup ossutil"
 description: "Setup aliyun ossutil"
 branding:
-  icon: 'play'  
-  color: 'orange'
+  icon: "play"
+  color: "orange"
 inputs:
   endpoint:
     description: "填写Bucket所在地域的域名信息，可参考访问域名和数据中心。"
@@ -20,4 +20,4 @@ inputs:
     default: ""
 runs:
   using: "node16"
-  main: "index.js"
+  main: "dist/index.js"

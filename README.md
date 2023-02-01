@@ -4,6 +4,8 @@
 
 # Usage
 
+确保你用的是 Node.js v16
+
 See [action.yml](action.yml)
 
 用例:
@@ -31,4 +33,4 @@ steps:
 
 # License
 
-The scripts and documentation in this project are released under the [MIT License](LICENSE)
+MIT
