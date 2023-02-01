@@ -23,7 +23,7 @@ async function main() {
   const bin = path.join(__dirname, ".bin");
   if (!fs.existsSync(bin)) {
     fs.mkdirSync(bin, {
-      recursive: true
+      recursive: true,
     });
   }
 
@@ -42,10 +42,10 @@ async function main() {
     ACCESS_KEY_SECRET,
     ...(STS_TOKEN ? ["-t", STS_TOKEN] : []),
     "-L",
-    "CH"
+    "CH",
   ]);
 }
 
-main().catch(error => {
+main().catch((error) => {
   core.setFailed(error.message);
 });
